@@ -1,0 +1,50 @@
+# =============== #
+# Unity generated #
+# =============== #
+Temp/
+Obj/
+UnityGenerated/
+Library/
+
+# ============ #
+# Custom sheat #
+# ============ #
+Logs/
+ 
+# ===================================== #
+# Visual Studio / MonoDevelop generated #
+# ===================================== #
+ExportedObj/
+*.svd
+*.userprefs
+*.pidb
+*.suo
+*.user
+*.unityproj
+*.booproj
+*.pdb
+*.vs
+bin/
+ 
+# ============ #
+# OS generated #
+# ============ #
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+# ========= #
+# Resharper #
+# ========= #
+_ReSharper.project*
+
+# =============== #
+# DeveloperAddons #
+# =============== #
+UnityVS/
+UnityVS.meta

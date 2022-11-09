@@ -1,0 +1,147 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{B40666BC-4430-4D98-A635-6B97DD89F21F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>ConsoleApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>masterserver</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Lidgren.Network, Version=2012.1.7.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Lidgren.Network.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include=".gitignore" />
+    <None Include=".git\COMMIT_EDITMSG" />
+    <None Include=".git\config" />
+    <None Include=".git\description" />
+    <None Include=".git\FETCH_HEAD" />
+    <None Include=".git\HEAD" />
+    <None Include=".git\hooks\applypatch-msg.sample" />
+    <None Include=".git\hooks\commit-msg.sample" />
+    <None Include=".git\hooks\fsmonitor-watchman.sample" />
+    <None Include=".git\hooks\post-update.sample" />
+    <None Include=".git\hooks\pre-applypatch.sample" />
+    <None Include=".git\hooks\pre-commit.sample" />
+    <None Include=".git\hooks\pre-push.sample" />
+    <None Include=".git\hooks\pre-rebase.sample" />
+    <None Include=".git\hooks\pre-receive.sample" />
+    <None Include=".git\hooks\prepare-commit-msg.sample" />
+    <None Include=".git\hooks\update.sample" />
+    <None Include=".git\index" />
+    <None Include=".git\info\exclude" />
+    <None Include=".git\logs\HEAD" />
+    <None Include=".git\logs\refs\heads\master" />
+    <None Include=".git\logs\refs\remotes\origin\master" />
+    <None Include=".git\objects\06\1c9ca950d0e8bb952c52799fb401a6614ad640" />
+    <None Include=".git\objects\0c\fa4ce09506ef9f2f4ca2e7ebd46de8203c002c" />
+    <None Include=".git\objects\14\6b0ac50427de03efa01e64030477bd01a8aaaa" />
+    <None Include=".git\objects\16\11e6fe7bc0c4ffcc0c237dd42866d5f23eddd0" />
+    <None Include=".git\objects\1e\db28f2d92a70df92291f1f3d08a9158cb7309e" />
+    <None Include=".git\objects\1e\f18e8ee7a4929a2b6e91b015b6ac4f3c3e3eca" />
+    <None Include=".git\objects\28\9d57a56fef9c03918e327e91ba445645d90a50" />
+    <None Include=".git\objects\29\b6cd8fd685c904df624816efbfbc1704cee70d" />
+    <None Include=".git\objects\2d\d46495c3ded527248eefd195195575c8bc17f0" />
+    <None Include=".git\objects\34\31a0c871a797c6d07108becbc12c3d9932293a" />
+    <None Include=".git\objects\3c\d5dcbb0c092138cc153c2fd1059d2fc6cf9b6e" />
+    <None Include=".git\objects\3d\7a631b803e35a94345a68d1b147b3fb0b90902" />
+    <None Include=".git\objects\43\f61cd8780a2a7a048cf4f35cf88780f23c4d43" />
+    <None Include=".git\objects\45\61f48ef856527533425c4f48e03f2f54709c11" />
+    <None Include=".git\objects\53\264d57f1589596f9dada6bc5faced9fa7d1e85" />
+    <None Include=".git\objects\68\cc2c2cde7e44bee4944a49498d8cef7101aa64" />
+    <None Include=".git\objects\69\a372f00515067df49adcb0e6e343fae95cee49" />
+    <None Include=".git\objects\71\fbf69121d5013418d8ca1757e2d1811f9ccfab" />
+    <None Include=".git\objects\7e\3c4693af1042da629d9ae02c84c9750ef33aa2" />
+    <None Include=".git\objects\91\21cdff9712cf212e0c9a29be95c68bbdce5cbe" />
+    <None Include=".git\objects\93\f2135554d1acc21777d10d7e62b601206eb44c" />
+    <None Include=".git\objects\b4\5f31e87a2aecf8f8aea6fe19db6d2d2f4f9d79" />
+    <None Include=".git\objects\b7\b4b7ad7cb9149fd86210042351016ea20c3c7e" />
+    <None Include=".git\objects\b8\c0cde767af912f3796eae6bee8a58030d8af9d" />
+    <None Include=".git\objects\be\8479eadd1fd1c40a29c049e27bbd90758aa63e" />
+    <None Include=".git\objects\c5\d2b564ce2beae1ab084f66fc462a17be7a99a8" />
+    <None Include=".git\objects\d0\32663b6ef0cd0ef64fb8838318e57746dc2f21" />
+    <None Include=".git\objects\d3\b6b486708990225287f7b310a3fc880653e46d" />
+    <None Include=".git\objects\d5\6a3c8c1e13c654facf465707892e14939f869a" />
+    <None Include=".git\objects\db\496522ab7cebbaa333767fe2d27464850ff9c2" />
+    <None Include=".git\objects\e6\9de29bb2d1d6434b8b29ae775ad8c2e48c5391" />
+    <None Include=".git\objects\e6\cbdfc965227aa9b699427ea466894b688d1e4c" />
+    <None Include=".git\objects\ed\06a50d2bd15f948bc467c202c24352f472d316" />
+    <None Include=".git\objects\f6\61ef7556e3e3787c61566c872d6056061ee645" />
+    <None Include=".git\objects\f9\2b3fd49289c073057161fbc5d1a39b5e531050" />
+    <None Include=".git\objects\fb\03201f7570a768d525a6c784f11661184bf6f2" />
+    <None Include=".git\refs\heads\master" />
+    <None Include=".git\refs\remotes\origin\master" />
+    <None Include=".vs\MasterServer\DesignTimeBuild\.dtbcache" />
+    <None Include=".vs\MasterServer\v15\Server\sqlite3\db.lock" />
+    <None Include=".vs\MasterServer\v15\Server\sqlite3\storage.ide" />
+    <None Include=".vs\MasterServer\v15\Server\sqlite3\storage.ide-shm" />
+    <None Include=".vs\MasterServer\v15\Server\sqlite3\storage.ide-wal" />
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Entities\Client.cs" />
+    <Compile Include="Entities\DisconnectedClient.cs" />
+    <Compile Include="Entities\GameHost.cs" />
+    <Compile Include="Entities\Hero.cs" />
+    <Compile Include="Entities\Heroes.cs" />
+    <Compile Include="Entities\LoginResultType.cs" />
+    <Compile Include="Entities\Maps.cs" />
+    <Compile Include="Entities\MasterServerMessageType.cs" />
+    <Compile Include="Entities\MasterServerResponseTypes.cs" />
+    <Compile Include="Entities\Races.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Helpers\CommonConstants.cs" />
+    <Compile Include="Helpers\Debug.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\Lidgren.Network.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".git\objects\info\" />
+    <Folder Include=".git\objects\pack\" />
+    <Folder Include=".git\refs\tags\" />
+    <Folder Include=".vs\MasterServer\v16\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>
